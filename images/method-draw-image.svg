@@ -1,0 +1,14 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style type="text/css">
+      @font-face {
+        font-family: "Nunito";
+        src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Nunito:wght@300&display=swap');
+      }
+
+    </style>
+  </defs>
+   <path fill="#FFFFFF" d="m40,0c22.091,0 40,17.909 40,40s-17.909,40 -40,40s-40,-17.909 -40,-40s17.909,-40 40,-40z" id="svg_2"/>
+  <text transform="matrix(1,0,0,1,0,0) " font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start"  font-size="69" 
+        id="svg_3" y="60" x="25" opacity="undefined" stroke-width="3" stroke="#8cc9f0" fill="#8cc9f0">L</text>
+</svg>
