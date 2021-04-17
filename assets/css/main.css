@@ -3708,7 +3708,7 @@ input, select, textarea {
 }
 .androidProjectPhotos{
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-content: center;
 	margin-bottom: 50px;
@@ -3856,4 +3856,5 @@ a {
 
 #fivePhotos{
 	justify-content: center;
+	padding: 0 50px;
 }
