@@ -298,7 +298,7 @@ input, select, textarea {
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: #838383;
 	}
 
 	strong, b {
@@ -3720,17 +3720,13 @@ input, select, textarea {
 	border-radius: 10px;
 }
 
-@media (max-width: 1280px){
-	.androidProjectPhotos{
-		justify-content: space-evenly;
-	}
-}
+
 
 svg{
 	font-family: Nunito, Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
-svg:hover{
+#cta svg:hover{
 	fill: #000000;
 }
 
@@ -3773,6 +3769,91 @@ a {
 
 #projectTitle{
 	font-size: 3em;
-	margin: 2em 0;
+	margin: 2em 0 1em 0;
 	text-align: center;
+}
+
+#notificationPic{
+	border-radius: 20px;
+	height: 120px;
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+#githubButton{
+	background-color: #8cc9f0;
+	border-radius: 15px;
+	padding: 4px 30px;
+	font-size: 40px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+#githubButton:hover{
+	color: #383838;
+}
+
+
+#detailPageHeader{
+	text-align: center;
+	margin:  0 0 50px 0 ;
+}
+
+
+
+#androidProjectPhotos, .fourPhotos{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: center;
+	margin-bottom: 50px;
+
+
+}
+
+#androidProjectPhotos, .fourPhotos .phonePhoto{
+	margin: 20px;
+}
+
+@media (max-width: 1280px){
+	#androidProjectPhotos, .fourPhotos{
+		justify-content: center;
+	}
+
+	#androidProjectPhotos .phonePhoto{
+		margin: 40px 50px;
+	}
+
+	.fourPhotos .phonePhoto{
+		margin: 40px 50px;
+	}
+}
+
+
+@media (max-width: 760px){
+	#githubButton{
+	padding: 7px 30px;
+	font-size: 25px;
+	font-weight: 400;
+	}
+	#githubButton svg{
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (max-width: 1680px){
+	.fourPhotos{
+		justify-content: center;
+	}
+}
+
+#fivePhotos{
+	justify-content: center;
 }
