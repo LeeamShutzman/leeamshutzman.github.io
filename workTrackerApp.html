@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Work Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images\myLogo.png">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="detailPageHeader">
+            <h1 id="projectTitle">Work Tracker</h1>
+            <a id="githubButton" href="https://github.com/LeeamShutzman/workTrackerApp" target="_blank">
+                Github Repository &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="#383838" class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <section id="content" class="main">
+                <h2>What is it?</h2>
+                <p>
+                    From time to time I do some work for my mother's companies, and I have to log my hours. I wanted
+                    to automate both the recording of the hours as well as the calculation my compensation, so I created
+                    a full stack project that consists of a mobile app for recording
+                    the hours, a website to view the hours worked by month and year, a Microsoft SQL Server relational
+                    database to store the data, and a Node.js server to run the website.
+                </p>
+                <h2>How does it work?</h2>
+                <p>
+                    The android app first prompts the user to log in with the credentials assigned by the database
+                    admin. The passwords are stored as SHA-256 hashes in the person table
+                    in the SQL database for added security. Once the user has logged in, the user encounters the main
+                    screen that indicates that they are "Off the Clock." There is a power
+                    button in the middle of the screen that is used to start logging hours. Once this button is pressed,
+                    the background color changes and a the "Off the Clock" changes
+                    to the "On the Clock" state. The user can start and stop the clock as many times as they like
+                    throughout the day. At percisely 23:59 every day, a background alarm checks
+                    the app's Sharedprefference data to see if there was any work done that day. If there was, the phone
+                    connects to the SQL server and saves the data for that day and resets
+                    the hours worked counter to 0.
+                </p>
+
+                <div class="fourPhotos">
+                    <img class="phonePhoto" src="images\Screenshot_20210806-175347.jpg" alt="">
+                    <img class="phonePhoto" src="images\Screenshot_20210806-185834.jpg" alt="">
+                    <img class="phonePhoto" src="images\Screenshot_20210806-221741.jpg" alt="">
+                    <img class="phonePhoto" src="images\Screenshot_20210806-180740.jpg" alt="">
+                </div>
+                
+                <div>
+                    <h3>Website</h3>
+                    <div class="webProjectPhotos">
+                        <img class="webPhoto" src="images\websiteHomeScreen.JPG" alt="">
+                        <img class="webPhoto" src="images\websiteMonth.JPG" alt="">
+                    </div>
+                    <div class="androidProjectPhotos">
+                        <img class="phonePhoto twoPhotos" src="images\mobileHome.jpg" alt="">
+                        <img class="phonePhoto twoPhotos" src="images\mobileMonth.jpg" alt="">
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
