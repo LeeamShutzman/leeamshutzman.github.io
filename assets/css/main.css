@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #76e3b9;
+		background-color: #767b7c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #adadad 25%, #2e2e2e 75%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #adadad 25%, #2e2e2e 75%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #adadad 25%, #2e2e2e 75%);
