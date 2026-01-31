@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Bandwidth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images\myLogo.png">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="detailPageHeader">
+            <h1 id="projectTitle">Bandwidth</h1>
+            <a id="githubButton" class="githubButton" href="https://github.com/LeeamShutzman/Bandwidth" target="_blank">
+                Github Repository &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="#ffffff" class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <section id="content" class="main">
+                <h2>What is it?</h2>
+                <p>
+                    At my first job, I used Java and Springboot to develop APIs. After 2 years working there, I switched companies as well as tech stacks, but
+                    I still enjoyed working in Springboot and Java. In order to keep my skills sharp, I wanted to work on a Springboot project, but one that I 
+                    would actually use. I decided to make a todo list app mostly because I wanted one with a custom design, but also because the functionality 
+                    is simple, and it would allow me to focus on adhering to best practices as well as to learn about everything that goes into building a 
+                    project from the ground up like cloud hosting, security, scalability, and more.
+                </p>
+                <h2>How does it work?</h2>
+                <p>
+                    The backend REST API is written in Java using Springboot using a Microservices layered architecture. The API is hosted in Docker containers
+                    on an EC2 instance on AWS. The API communicates with an RDS Postgres database that stores user and task data. The database is also hosted on 
+                    AWS and is only accessible by the EC2 instance that's in the same private subnet. The frontend is written in React Native so that there is one 
+                    codebase for web, iOS, and Android. The frontend is also hosted on the EC2 instance and has SSL security with a publically available DNS domain
+                    at: <a class="URL" href="https://bandwidth.ddns.net/">https://bandwidth.ddns.net/</a>
+                </p>
+                <p>
+                    When the user creates an account and logs in, their password is encrypted in transit and hashed when stored in the database. There is a user table 
+                    and a task table. The the relationship in the database is one user can have many tasks. Users can be created and updated from the front end, but to 
+                    fully delete your accout you have to contact an administrator. Tasks can be created, updated, deleted, and marked as complete. Tasks have color coded 
+                    priority levels that can be modified at any time.
+                </p>
+
+
+
+                <div>
+					<div class="webProjectPhotos">
+                        <img class="webPhoto" src="images\BandwidthLoginScreen.png" alt="">
+                        <img class="webPhoto" src="images\BandwidthTaskGrid.png" alt="">
+                    </div>
+                    <div class="mobileProjectPhotos">
+                        <img class="phonePhoto twoPhotos hideUntilMobile"  src="images\BandwidthLoginMobileWeb.png" alt="">
+                        <img class="phonePhoto twoPhotos hideUntilMobile"  src="images\BandwidthTaskGridMobileWeb.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Mobile App</h3>
+                    <div class="fourPhotos">
+                        <img class="phonePhoto" src="images\BandwidthLoginMobile.PNG" alt="">
+                        <img class="phonePhoto" src="images\BandwidthSignupMobile.PNG" alt="">
+                        <img class="phonePhoto" src="images\BandwidthTaskGridMobile.PNG" alt="">
+                        <img class="phonePhoto" src="images\BandwidthAddTaskMobile.PNG" alt="">
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
